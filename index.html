@@ -19,37 +19,47 @@
         <nav>
             <img src="images/logo/Booki.png" alt="logo du site Booki" id="logoNav">
             <ul class="ulNav">
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li id="lien-hebergements"><a href="#dir-hebergements">Hébergements</a></li>
+               <li><a href="#dir-activites">Activités</a></li>
             </ul>
         </nav>
         <header>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <br>
                 <form action="#" method="get" class="formulaire-recherche">
                       <label for="text-recherche" class="icone-recherche"><i class="fa-lg fa-solid fa-location-dot" aria-hidden="true"></i></label>
                       <input type="search" name="ville" id="text-recherche" placeholder="Marseille, France" maxlength="30">
-                      <button id="btn-recherche">Rechercher</button> 
+                      <button id="btn-recherche">Rechercher</button>
+                      <b id="btn-recherche-mobile"><i class=" fa-solid fa-magnifying-glass"></i></b> 
                   </form>
-                  <br>
                   <div class="zone-filtres">
                       <p>Filtres</p>
                       <ul class="filtres">
-                        <li><i class="fa-lg fa-solid fa-money-bill-wave"></i>Économique</li>
-                        <li><i class="fa-lg fa-solid fa-person"></i>Familial</li>
-                        <li><i class="fa-lg fa-solid fa-heart"></i>Romantique</li>
-                        <li><i class="fa-lg fa-solid fa-fire"></i>Nos pépites</li>
+                        <li>
+                            <i class="fa-lg fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </li>
+                        <li>
+                            <i class="fa-lg fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </li>
+                        <li>
+                            <i class="fa-lg fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </li>
+                        <li>
+                            <i class="fa-lg fa-solid fa-fire"></i>
+                            <span>Nos pépites</span>
+                        </li>
                     </ul>
                 </div>
             <div class="texte-information">
-                <i class="fa-xs fa-solid fa-info logo-info" ></i>
+                <i class="fa-xs fa-solid fa-info logo-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-            <br>
         </header>
         <main>
-            <div class="hebergements-and-populaires">
+            <div class="hebergements-and-populaires" id="dir-hebergements">
                 <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -80,7 +90,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
-                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-sm fa-solid fa-star" aria-hidden="true"></i>
@@ -169,8 +179,8 @@
                                 </div>
                             </article>
                         </a>
+                            <p class="section-title-plus">Afficher plus</p>
                     </div>
-                    <p class="section-title-lien"><a href="#">Afficher plus</a></p>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -238,8 +248,7 @@
                     </div>
                 </section>
             </div>
-            <br><br>
-            <section class="activites">
+            <section class="activites" id="dir-activites">
                 <div class="activites-title">
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
@@ -287,28 +296,27 @@
                 </div>
             </section>
         </main>
-        <br><br><br>
         <footer>
             <div class="div-footer">
                 <h1 class="titre-footer">À propos</h1>
                 <ul class="lien-footer">
-                    <li><a href="#"></a>Fonctionnement du site</li>
-                    <li><a href="#"></a>Conditions générales </li>
-                    <li><a href="#"></a>Données et confidentialité</li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales </a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
             <div class="div-footer">
                 <h1 class="titre-footer">Nos hébergements</h1>
                 <ul class="lien-footer">
-                    <li><a href="#"></a>Charte qualité</li>
-                    <li><a href="#"></a>Proposer votre hôtel</li>
+                    <li><a href="#">Charte qualité </a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
                 </ul>
             </div>
             <div class="div-footer">
                 <h1 class="titre-footer">Assistance</h1>
                 <ul class="lien-footer">
-                    <li><a href="#"></a>Centre d’aide</li>
-                    <li><a href="#"></a>Nous contacter</li>
+                    <li><a href="#">Centre d’aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
         </footer>
